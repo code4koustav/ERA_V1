@@ -4,7 +4,7 @@ MNIST ("Modified National Institute of Standards and Technology") is the de fact
 
 ![image](https://github.com/code4koustav/ERA---First-Neural-Network/assets/92668707/d278c429-63e7-4a2f-9cd1-565e65ca9c0e)
 
-##Usage
+## Usage
 ### 1 . model.py
 This file contains the architechture of the convolution network.
 which includes no. of convolution layers , padding no , strides , kernel size and activation function
@@ -22,7 +22,9 @@ In this file we are doing the following opertaion -
   b. Data tranformation
   c. Calling both model.py and Utils.py
   d. Run the model in multiple epoch
-  c. Model summry
+  c. Model summary
+  
+  
   ![image](https://github.com/code4koustav/ERA---First-Neural-Network/assets/92668707/fde6da01-89b3-479c-a618-4a1a55ae48d1)
 
 
