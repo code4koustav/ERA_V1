@@ -12,16 +12,9 @@ Also loss is calculated for different learning rate (0.01,0.02,0.05,1,2) and bel
 
 ## 2. CNN model having less than 20k parameter on MNIST Data -
 Inorder to keep the parameters less than 20,000 we have used the below structure 
-Block	N_in	Kernel	Stride	Padding	J_in	J_out	RF_in	RF_out	N_out	channel	Params
-Conv1	28	3	1	1	1	1	1	3	28	12	120
-Conv2	28	3	1	1	1	1	3	5	28	24	2616
-Conv3	28	3	1	1	1	1	5	7	28	36	7812
-MaxPool 1	28	2	2	1	1	2	7	8	15	36	5220
-T1	15	1	1	1	2	2	8	8	17	12	444
-Conv4	15	3	1	1	2	2	8	12	15	12	1308
-Conv5	15	2	1	1	2	2	12	14	16	24	1176
-MaxPool 2	16	2	2	1	2	4	14	16	9	24	2328
-T2	9	1	1	1	4	4	16	16	11	12	300
-Conv6	11	2	2	1	4	8	16	20	6.5	12	588
-Conv7	6.5	2	2	1	8	16	20	28	4.25	24	1176
 ![image](https://github.com/code4koustav/ERA---First-Neural-Network/assets/92668707/3bdcfb80-3014-4665-8b35-8994ab240b2a)
+After every convolution layers batchnormalization and dropout (5%) has been used.
+In the final layers GAP has been used and able to achieve 99% accurecy.
+Below is the model summary :
+![image](https://github.com/code4koustav/ERA---First-Neural-Network/assets/92668707/6e8fb503-e098-4b17-ab76-f23fc7595c21)
+
